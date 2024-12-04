@@ -1,0 +1,1 @@
+savedcmd_/home/vajid/Desktop/LDD/DAY3/KV_driver/KV_driver.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/vajid/Desktop/LDD/DAY3/KV_driver/KV_driver.ko /home/vajid/Desktop/LDD/DAY3/KV_driver/KV_driver.o /home/vajid/Desktop/LDD/DAY3/KV_driver/KV_driver.mod.o

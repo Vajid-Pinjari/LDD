@@ -1,0 +1,1 @@
+savedcmd_/home/vajid/Desktop/LDD/DAY3/simple_driver/simple_driver.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/vajid/Desktop/LDD/DAY3/simple_driver/simple_driver.ko /home/vajid/Desktop/LDD/DAY3/simple_driver/simple_driver.o /home/vajid/Desktop/LDD/DAY3/simple_driver/simple_driver.mod.o

@@ -1,0 +1,1 @@
+savedcmd_/home/vajid/Desktop/LDD/DAY3/simple_driver/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/vajid/Desktop/LDD/DAY3/simple_driver/Module.symvers -T /home/vajid/Desktop/LDD/DAY3/simple_driver/modules.order -i Module.symvers -e 
