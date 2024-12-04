@@ -1,0 +1,1 @@
+savedcmd_/home/vajid/Desktop/LDD/DAY2/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/vajid/Desktop/LDD/DAY2/Module.symvers -T /home/vajid/Desktop/LDD/DAY2/modules.order -i Module.symvers -e 

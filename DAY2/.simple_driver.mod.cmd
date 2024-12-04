@@ -1,0 +1,1 @@
+savedcmd_/home/vajid/Desktop/LDD/DAY2/simple_driver.mod := printf '%s\n'   simple_driver.o | awk '!x[$$0]++ { print("/home/vajid/Desktop/LDD/DAY2/"$$0) }' > /home/vajid/Desktop/LDD/DAY2/simple_driver.mod
