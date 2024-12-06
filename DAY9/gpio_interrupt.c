@@ -3,7 +3,7 @@
  *
  *  \details    Basic GPIO interrupt driver for Raspberry Pi 4
  *
- *  \author     TechDhaba
+ *  \author     Vajid
  *
  ***************************/
 #include <linux/kernel.h>
@@ -16,8 +16,8 @@
 #include <linux/gpio.h>     // GPIO functions
 #include <linux/interrupt.h> // Interrupts
 
-#define GPIO_BUTTON  17  // GPIO pin for the button
-#define GPIO_LED     27  // GPIO pin for the LED
+#define GPIO_BUTTON  514  // GPIO pin for the button
+#define GPIO_LED     515  // GPIO pin for the LED
 
 static int irq_number;       // IRQ number for the button GPIO
 static dev_t dev = 0;        // Device number
@@ -86,7 +86,7 @@ static int __init gpio_driver_init(void)
 
     // Configure button GPIO as input with pull-up
     gpio_direction_input(GPIO_BUTTON);
-    gpio_set_debounce(GPIO_BUTTON, 200); // Debounce time in ms
+    gpiod_set_debounce(GPIO_BUTTON, 200); // Debounce time in ms
 
     // Request GPIO for LED
     if (!gpio_is_valid(GPIO_LED)) {
@@ -152,6 +152,6 @@ module_init(gpio_driver_init);
 module_exit(gpio_driver_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("TechDhaba <info@techdhaba.com>");
+MODULE_AUTHOR("Vajid");
 MODULE_DESCRIPTION("Basic GPIO Interrupt Driver for Raspberry Pi 4");
 MODULE_VERSION("1.0");
